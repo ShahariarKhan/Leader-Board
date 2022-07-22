@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content{
+    margin: 0 15%;
+    
+}
+
+/*---------------- Header Start---------------- */
+
+.main-head{
+    display: flex;
+    background: #562EFF;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 36px;
+}
+
+
+.logo-item{
+    display: flex;
+    align-items: center;
+}
+
+.header-logo img{
+    width: 40.42px;
+    height: 51px;
+
+}
+
+.header-logo-name{
+    font-size: 24px;
+    margin-left: 20px;
+    color: #FFFFFF;
+}
+
+
+.manubar{
+    display: flex;
+    align-items: center;
+}
+
+.manubar>li{
+    list-style: none;
+
+}
+.manubar>li>a{
+    margin: 0 25px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.manubar>li>a:hover{
+    color: tomato;
+}
+
+/* responsive */
+
+
+/* tablet */
+
+@media only screen and (max-width:557px) {
+    .main-head{
+        flex-direction: column;
+    }
+    .logo-item{
+        justify-content: center;
+    }
+    .manubar{
+        justify-content: space-between;
+    }
+}
+
+/*---------------- Header Start---------------- */
+
+
+
+
+/*-------------------- Top Player Section Start---------------- */
+
+.top-player-top-blog{
+    
+    border-radius: 5px;
+    padding: 3%;
+    margin-bottom: 21px;
+}
+
+hr{
+    margin: 30px 10px;
+}
+
+
+.top-player>h2{
+    color: #562EFF;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    row-gap: 30px;
+}
+
+
+.player{
+    display: flex;
+    align-items: center;
+}
+.player-img img{
+    width: 56px;
+    height: 56px;
+}
+.player-name h2{
+    font-size: 18px;
+    margin-left: 16px;
+}
+
+
+/* Responsive */
+
+/* for tablet */
+@media only screen and (min-width:557px) and (max-width:991px) {
+    .players{
+       
+        grid-template-columns: repeat(2 ,1fr);
+    }
+}
+
+/* for mobile devices */
+
+@media only screen and (max-width:556px) {
+    .players{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+    }
+}
+
+/*----------------------------- Top Player Section Start--------------------------- */
+
+
+.top-blogs>h2{
+    color: #562EFF;
+    font-size: 24px;
+    margin-bottom: 30px;
+
+}
+
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 26px;
+}
+.blog{
+    display: flex;
+    align-items: center;
+
+}
+.blog .blog-img img{
+    width: 177px;
+    height: 117px;
+}
+.blog-text{
+    margin-left: 16px;
+}
+.blog-author{
+    color: #9F9F9F;
+}
+.blog-author a{
+    text-decoration: none;
+    color: #562EFF;
+}
+
+@media only screen and (max-width:557px) {
+    .blogs{
+        grid-template-columns: repeat(1 ,1fr);
+    }
+    
+}
+
+/*----------------------------- Top Player Section End--------------------------- */
+
+
+/* -----------------------Course Section Start ---------------------- */
+
+
+
+.top-course{
+   
+    padding: 3%;
+    border-radius: 5px;
+}
+
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+.course{
+    
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px;
+}
+
+
+.top-course>h2{
+    color: #562EFF;
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+.course-img img{
+    width: 224px;
+    height: 104px;
+    margin-bottom: 20px;
+}
+
+.course-info>h4{
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+.course-info>a{
+    text-decoration: none;
+    color: #ED6B4F;
+    font-size: 14px;
+    margin-bottom: 20px;
+    
+}
+
+.course-rating-and-time{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.course-rating{
+    display: flex;
+    align-items: center;
+}
+.course-rating>p{
+    margin-left: 10px;
+}
+.filled{
+    color: #FFC014;
+    font-size: 12px;
+}
+
+.course-time{
+    display: flex;
+    background: #FFE4E8;
+    border-radius: 14.6913px;
+    color: #FF4A60;
+    font-size: 20px;
+    padding: 4px 6px;
+}
+
+
+/* responsive */
+
+/* tablet responsive */
+
+@media only screen and (max-width:557px) {
+    .courses{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+/* -----------------------Course Section Start ---------------------- */
